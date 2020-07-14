@@ -34,7 +34,6 @@ public class Servlet extends HttpServlet {
         out.print("<head>");
         out.print(" <title>Resultado Servlet</title>");
         out.print("</head>");
-
         out.print("<body>");
         out.print("<h1>Parametros procesados por el servlet</h1>");
         out.print("<p>Usuario: " + usuario + "</p>");
@@ -53,11 +52,8 @@ public class Servlet extends HttpServlet {
         }
         
         out.print("Ocupación: "+ocupacion);
-        
         out.print("Comentarios: "+comentarios);
-
         out.print("</body>");
-
         out.print("</html>");
     }
 }
