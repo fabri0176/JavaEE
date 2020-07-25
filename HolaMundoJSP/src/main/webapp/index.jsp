@@ -9,15 +9,28 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Hola Mundo JSP</title>
+        <title>Ejemplo expresion JSP</title>
     </head>
     <body>
-        <h1>Hola Mundo JSP</h1>
+        <h1>Ejemplo expresion JSP</h1>
         <ul>
-            <li><% out.print("Hola mundo con escriplets");  %> </li>
+            <li><% out.print("Hola mundo con escriplets");%> </li>
             <li>${"Hola mundo con Expression Language {EL}"}</li>
-            <li><%= "Hola mundo con expresiones" %></li>
+            <li><%= "Hola mundo con expresiones"%></li>
             <li><c:out value="Hola munda con JSTL"></c:out></li>
         </ul>
-    </body>
+
+        <p>
+            <a href="expresiones.jsp">Link al JSP Expresiones</a>
+            <br>
+        <h4>Formulario HTML</h4>
+        <form name="form1" action="procesaformulario.jsp">
+            Usuario: <input type="text" name="usuario">
+            <br>
+            Password: <input type="password" name="password" >
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </p>
+</body>
 </html>
